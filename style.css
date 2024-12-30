@@ -1,0 +1,496 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Warna latar belakang halaman */
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff; /* Mengubah latar belakang dashboard menjadi putih */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between; /* Menyusun card sejajar */
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1; /* Membuat card memiliki lebar yang sama */
+  max-width: 400px; /* Lebar maksimum untuk kartu */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff; /* Tetap mempertahankan warna latar belakang putih untuk kartu */
+  border: 1px solid #00796b; /* Border berwarna */
+  color: #00796b; /* Warna teks yang kontras */
+  margin: 10px; /* Jarak antar kartu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+/* Mengatur total buku dan total pengguna menjadi bold */
+.card .total {
+  font-weight: bold; /* Membuat teks menjadi bold */
+  font-size: 1.5em; /* Ukuran font lebih besar untuk total */
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.button-group .action-button {
+  flex: 1; /* Membuat semua tombol memiliki lebar yang sama */
+  padding: 10px; /* Padding untuk tombol */
+  margin: 10px -10px; /* Jarak antar tombol vertikal */
+  border-radius: 10px;
+  color: white; /* Warna teks tombol */
+  text-align: center; /* Memastikan teks berada di tengah */
+  display: flex; /* Menggunakan flexbox untuk menempatkan teks */
+  justify-content: center; /* Mengatur teks agar berada di tengah secara horizontal */
+  align-items: center; /* Mengatur teks agar berada di tengah secara vertikal */
+  cursor: pointer; /* Mengubah kursor menjadi pointer pada hover */
+  transition: background-color 0.3s; /* Transisi saat hover */
+  width: 100%; /* Lebar penuh agar sesuai dengan tombol Logout */
+}
+
+/* Tombol Biru untuk Tambah Buku, Cari Buku, dan Lihat Buku */
+.button-group .blue-button {
+  background-color: #007bff; /* Warna biru */
+}
+
+.button-group .blue-button:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+/* Tombol Merah untuk Logout */
+.button-group .logout-button {
+  background-color: #ff4d4d; /* Warna merah */
+  width: 100%; /* Lebar penuh untuk tombol Logout */
+}
+
+.button-group .logout-button:hover {
+  background-color: #cc0000; /* Warna merah lebih gelap saat hover */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666; /* Warna footer yang lebih gelap */
+}
+
+/* login */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3; /* Warna latar belakang yang lembut */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Mengisi tinggi layar */
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Lebar yang tetap */
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Mengatur box model */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Lebar tombol 100% */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+a {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* register */
+.register-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.register-group {
+  margin-bottom: 15px;
+}
+
+.register-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-group input[type="text"],
+.register-group input[type="email"],
+.register-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-group input[type="text"]:focus,
+.register-group input[type="email"]:focus,
+.register-group input[type="password"]:focus {
+  border-color: #0056b3;
+}
+
+.register-actions {
+  margin-top: 10px;
+}
+
+.register-button {
+  background-color: #0056b3; /* Warna biru */
+  color: white; /* Teks warna putih */
+  padding: 10px 15px; /* Ruang dalam */
+  border: none; /* Tanpa border */
+  border-radius: 4px; /* Sudut melengkung */
+  cursor: pointer; /* Kursor berubah saat hover */
+  text-align: center; /* Teks di tengah */
+  text-decoration: none; /* Tanpa garis bawah */
+  display: inline-block; /* Agar bisa berperilaku seperti tombol */
+  width: 100%; /* Tombol lebar penuh */
+}
+
+.register-button:hover {
+  background-color: #004494; /* Warna lebih gelap saat hover */
+}
+
+/* index.php */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3; /* Warna latar belakang */
+  margin: 0;
+  padding: 0; /* Tambahkan padding untuk menghindari spasi di tepi */
+}
+
+/* Kontainer Utama */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000000; /* Latar belakang putih untuk konten */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Daftar Buku */
+.book-list {
+  margin-top: 20px; /* Jarak antara judul dan daftar buku */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left; /* Mengatur teks agar rata kiri */
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff; /* Warna header */
+  color: white;
+}
+
+/* Tombol Aksi */
+.action-buttons {
+  display: flex;
+  justify-content: center; /* Pusatkan tombol */
+  gap: 10px; /* Jarak antar tombol */
+}
+
+.action-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px; /* Ukuran tombol yang sama */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.delete-button {
+  margin-left: 10px; /* Tambahan jarak untuk tombol hapus */
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+/* Tabel Info Buku */
+.info-table {
+  margin-top: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.info-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table th {
+  background-color: #ffffff #d3d3d3; /* Warna header tabel info */
+  text-align: left;
+}
+
+.info-table td {
+  padding: 8px;
+}
+
+/* Tombol Aksi di Bawah */
+.actions {
+  display: flex;
+  justify-content: center; /* Pusatkan tombol */
+  gap: 10px; /* Jarak antar tombol */
+  margin-top: 20px; /* Jarak atas untuk lebih terlihat */
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+  .book-list {
+    display: block;
+  }
+}
+
+/* create.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3; /* Warna latar belakang */
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Latar belakang putih untuk konten */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff; /* Warna saat fokus */
+  outline: none;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.action-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+/* menampilkan buku */
+.back-button {
+  color: #007bff; /* Warna biru untuk tautan */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.back-button:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* edit */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333; /* Warna font yang jelas */
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #e7f3ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center; /* Memusatkan judul */
+  margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.back-button,
+.back-link a {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #007bff; /* Warna teks */
+  font-weight: bold; /* Tebal */
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column; /* Mengatur form secara vertikal */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Jarak antar grup form */
+}
+
+label {
+  margin-bottom: 5px; /* Jarak bawah label */
+  font-weight: bold; /* Tebal untuk label */
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Garis border untuk input */
+  border-radius: 5px; /* Sudut melengkung */
+  width: 100%; /* Lebar penuh */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar */
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Mengubah kursor menjadi pointer pada hover */
+  transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+.back-link {
+  text-align: center; /* Memusatkan link kembali */
+  margin-top: 20px; /* Jarak atas link kembali */
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+  .dashboard {
+    flex-direction: column; /* Ubah layout menjadi kolom di layar kecil */
+  }
+
+  .card {
+    max-width: 100%; /* Lebar penuh pada perangkat kecil */
+  }
+
+  .action-buttons {
+    flex-direction: column; /* Ubah menjadi kolom di layar kecil */
+  }
+
+  .action-button {
+    width: auto; /* Kembalikan lebar tombol ke otomatis */
+  }
+}
